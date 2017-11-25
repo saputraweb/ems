@@ -20,5 +20,22 @@ Class Mform extends CI_Model
 		$row = $query->row();
 		return $row;	
 	}
+
+	function listDataKlien(){
+		$query="select
+				a.*, date_format( a.created_at,'%Y-%m-%d %H:%i:%s') as created_at, 
+				date_format(a.tgl_lahir,'%d.%m.%Y') as tgl_lahir,
+				(
+				case
+					when a.jenkel ='L' then 'Laki-laki'
+					when a.jenkel ='P' then 'Perempuan'
+					else ''
+				end
+				) as jenkel
+				from data_pasien a";
+		$recordset = $this->db->query($query);
+		$recordset = $recordset->result();
+		return $recordset;
+	}
 }
 ?>

@@ -4,6 +4,8 @@
     <script src="<?php echo base_url();?>dist/js/bootstrap.min.js"></script>
 	<script src="<?php echo base_url();?>dist/js/validator.min.js"></script>
 	<script src="<?php echo base_url();?>dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="<?php echo base_url();?>dist/js/jquery.dataTables.js"></script>
+	<script src="<?php echo base_url();?>dist/js/dataTables.bootstrap.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#myForm').validator();
@@ -11,6 +13,7 @@
 			format: "dd.mm.yyyy",
 			autoclose: true
 		});
+		$('#datatable').DataTable();
 	})
 	</script>
   </body>

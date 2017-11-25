@@ -5,15 +5,15 @@ $ceklist=array("0"=>"Tidak","1"=>"Ya");
 ?>
 <ol class="breadcrumb">
   <li><a href="/ems">Home</a></li>
-  <li><a href="<?php echo site_url('form');?>">Form</a></li>
-  <li class="active">Hasil</li>
+  <li><a href="<?php echo site_url('histori');?>">Histori</a></li>
+  <li class="active">Detail</li>
 </ol>
 <div class="row">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
 	<div class="panel panel-success">
 		<div class="panel-heading">
-			<h3 class="panel-title">Data Klien</h3>
+			<h3 class="panel-title">Detail Klien</h3>
 		</div>
 		<div class="panel-body">
 			<table class="table table-bordered">
