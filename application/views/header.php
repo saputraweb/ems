@@ -80,7 +80,8 @@
       <div id="menu-custom">
       <ul class="">
             <li ><a href="/ems" class="active">Home</a></li>
-            <li><a href="<?php  echo site_url('form');?>">Form</a></li>
+            <li><a href="<?php  echo site_url('info');?>">Info</a></li>
+            <li><a href="<?php  echo site_url('form');?>">Assesstment</a></li>
             <li><a href="<?php  echo site_url('histori');?>">Histori</a></li>	
             
           </ul>
