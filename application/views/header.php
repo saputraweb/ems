@@ -21,12 +21,72 @@
     <![endif]-->
 	<style type="text/css">
 	body{
-		margin-top:70px;
+	/*	margin-top:70px; */
 	}
+  .logo{
+    margin:10px 0px;
+  }
+  .logo img{
+    width:100px;
+  }
+  #menu-custom{
+    margin:10px 0px;
+  }
+  #menu-custom ul{
+    margin:0px;
+    padding:0px;
+    float:right;
+  }
+  #menu-custom li {
+    list-style:none;
+    float:left;
+  }
+  #menu-custom a{
+    display:block;
+    padding:10px 10px 10px 20px;
+    font-size:1.2em;
+    color:#727272;
+    font-weight:bold;
+  }
+  #menu-custom a.active{
+    
+    color:#ffdb0d;
+  }
+  a{
+    color:#ffdb0d;
+  }
+  .breadcrumb{
+    background-color:#727272;
+    
+  }
+  .breadcrumb li.active{
+    color:#ffffff;
+  }
+  .breadcrumb>li+li:before{
+    color:#ffffff;
+  }
+  .breadcrumb a{
+    color:#ffdb0d;
+    font-style:underline;
+  }
 	</style>
   </head>
   <body>
-   <!-- Fixed navbar -->
+  
+    <div class="container">
+      <div class="logo">
+      <img src="<?php echo base_url();?>dist/images/makara-ui.png" alt="" >
+      </div>
+      <div id="menu-custom">
+      <ul class="">
+            <li ><a href="/ems" class="active">Home</a></li>
+            <li><a href="<?php  echo site_url('form');?>">Form</a></li>
+            <li><a href="<?php  echo site_url('histori');?>">Histori</a></li>	
+            
+          </ul>
+      </div>
+    </div>
+    <!--
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -41,11 +101,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/ems">Home</a></li>
-            <li><a href="<?php echo site_url('form');?>">Form</a></li>
-            <li><a href="<?php echo site_url('histori');?>">Histori</a></li>	
+            <li><a href="<?php // echo site_url('form');?>">Form</a></li>
+            <li><a href="<?php // echo site_url('histori');?>">Histori</a></li>	
             
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 	<div class="container">
+-->
+<div class="container">

@@ -1,3 +1,4 @@
 <?php include("header.php"); ?>
-<h1>EMS PROJECT</h1>
+<?php include("slider.php"); ?>
+
 <?php include("footer.php"); ?>
