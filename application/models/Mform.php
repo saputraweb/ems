@@ -37,5 +37,20 @@ Class Mform extends CI_Model
 		$recordset = $recordset->result();
 		return $recordset;
 	}
+
+	function simpanAssest($data){
+		$this->db->insert("data_assesst",$data);
+	}
+
+	function updateKlien($data,$id){
+		$this->db->update("data_pasien",$data,array("id_pasien"=>$id));
+	}
+
+	function getHasil($id){
+		$sql="SELECT a.*, date_format(a.created_at,'%d.%m.%Y %H:%i:%s') as created_at FROM data_assesst a WHERE a.id_pasien='".$id."'";
+		$query=$this->db->query($sql);
+		$row = $query->row();
+		return $row;
+	}
 }
 ?>

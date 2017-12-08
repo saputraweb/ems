@@ -69,6 +69,12 @@
     color:#ffdb0d;
     font-style:underline;
   }
+  .judul{
+    margin-left:15px;
+    font-size:2em;
+    color:#727272;
+    font-style:italic;
+  }
 	</style>
   </head>
   <body>
@@ -76,6 +82,7 @@
     <div class="container">
       <div class="logo">
       <img src="<?php echo base_url();?>dist/images/makara-ui.png" alt="" >
+      <b class="judul">Elderly Mobility Scale ( EMS ) Assesstment</b>
       </div>
       <div id="menu-custom">
       <ul class="">

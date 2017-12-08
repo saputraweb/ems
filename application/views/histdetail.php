@@ -59,9 +59,21 @@ $ceklist=array("0"=>"Tidak","1"=>"Ya");
 				<td colspan="2"><small>Data dibuat tanggal <?php echo $det->created_at;?><small></td>
 			</tr>
 			</table>
+			
 		</div>
 	</div>
+	<?php 
+	if($det->hasil == "satuya"){
+		include("satuya.php");
+	} else {
+		if($det->flagases == "N"){
+			include("formases2.php");
+		} else{
+			include("hasilases2.php");
+		}
+	}
 	
+	?>
 	</div>
 	<div class="col-md-2"></div>
 </div>
